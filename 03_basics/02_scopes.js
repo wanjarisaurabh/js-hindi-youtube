@@ -44,6 +44,9 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
+
+//aise declare krne pr chal jata ahi 
+
 console.log(addone(5))
 
 function addone(num){
@@ -51,8 +54,8 @@ function addone(num){
 }
 
 
-
-addTwo(5)
+//aise declare krne pr pehle decalre krna hota hai function ko 
+addTwo(5) 
 const addTwo = function(num){
     return num + 2
 }
