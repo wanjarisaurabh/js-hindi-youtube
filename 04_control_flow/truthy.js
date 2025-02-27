@@ -13,6 +13,8 @@ if (userEmail) {
 //truthy values
 // "0", 'false', " ", [], {}, function(){}
 
+
+//to check an array is it empty 
 // if (userEmail.length === 0) {
 //     console.log("Array is empty");
 // }

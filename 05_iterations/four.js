@@ -5,14 +5,20 @@ const myObject = {
     swift: "swift by apple"
 }
 
-for (const key in myObject) {
-    //console.log(`${key} shortcut is for ${myObject[key]}`);
+// for (const key in myObject) {
+//     console.log(`${key} shortcut is for ${myObject[key]}`);
+// }
+// //not possible
+for (const [key , value] of myObject) {
+
+    console.log(key , value);
+    
 }
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
-for (const key in programming) {
-    //console.log(programming[key]);
+for (const key of programming) {
+    console.log(key);
 }
 
 // const map = new Map()
@@ -22,5 +28,9 @@ for (const key in programming) {
 // map.set('IN', "India")
 
 // for (const key in map) {
-//     console.log(key);
+//     console.log(map[key]);
 // }
+
+//for in work for obj , and arra 
+//Arr - give usss key 
+//obj both 

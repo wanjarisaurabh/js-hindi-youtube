@@ -38,7 +38,7 @@
 // // console.log(loginUserMessage("hitesh"))
 // // console.log(loginUserMessage("hitesh"))
 
-//res oprator 
+//res oprator always in last 
 // function calculateCartPrice(val1, val2, ...num1){
 //     return num1
 // }
