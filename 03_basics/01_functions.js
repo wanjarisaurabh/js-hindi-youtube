@@ -13,13 +13,14 @@
 // // function addTwoNumbers(number1, number2){
 
 // //     console.log(number1 + number2);
+
 // // }
 
 // function addTwoNumbers(number1, number2){
 
 //     // let result = number1 + number2
 //     // return result
-//     return number1 + number2
+    // return number1 + number2 //unreachebale 
 // }
 
 // const result = addTwoNumbers(3, 5)
@@ -34,6 +35,23 @@
 //     }
 //     return `${username} just logged in`
 // }
+
+// function logic(name = "saurbah "){
+//     console.log("hey this is saurba " , name)
+// }
+
+// logic("mohit")
+
+
+const hey = (name = "this is ") =>{
+    console.log("hey and this is s" , name )
+}
+
+hey("saurabh ")
+
+// console.log(loginUserMessage("saurbah "))
+// console.log(loginUserMessage())
+
 
 // // console.log(loginUserMessage("hitesh"))
 // // console.log(loginUserMessage("hitesh"))

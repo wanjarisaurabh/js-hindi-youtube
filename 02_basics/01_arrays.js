@@ -3,7 +3,7 @@
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
-const myArr2 = new Array(1, 2, 3, 4)
+const myArr2 = new Array(1, 2, 4,2,2,3, 4)
 // console.log(myArr[1]);
 
 // Array methods
@@ -16,12 +16,13 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.shift()// remove from the front 
 
 // console.log(myArr.includes(9));
-// console.log(myArr.indexOf(3));
+console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join() // change the array to string 
+const newArr = myArr.join() // change the array to string 
 
-// console.log(myArr);
-// console.log( newArr);
+console.log(myArr);
+console.log( newArr);
+console.log(typeof newArr)
 
 
 // slice, splice
@@ -34,6 +35,6 @@ console.log(myn1);
 console.log("B ", myArr);
 
 
-const myn2 = myArr.splice(1, 3) //it also change the the orignal array , which is not ahppend in slice 
+const myn2 = myArr.splice(1, 3) //it also change the the orignal array , which is not hppend in slice , it include the 3 index
 console.log("C ", myArr);
 console.log(myn2);

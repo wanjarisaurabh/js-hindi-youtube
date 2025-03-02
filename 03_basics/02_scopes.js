@@ -1,17 +1,17 @@
-// //var c = 300
-// let a = 300
-// if (true) {
-//     let a = 10
-//     const b = 20
-//     // console.log("INNER: ", a);
-    
-// }
+var c = 300
+let a = 300
+if (true) {
+    let a = 10
+    const b = 20
+    console.log("INNER: ", a);
+    var c   = 700
+}
 
 
 
-// // console.log(a);
-// // console.log(b);
-// // console.log(c);
+console.log(a);
+// console.log(b);
+console.log(c);
 
 
 // function one(){
@@ -47,18 +47,18 @@
 
 // //aise declare krne pr chal jata ahi 
 
-// console.log(addone(5))
+console.log(addone(5))
 
-// function addone(num){
-//     return num + 1
-// }
+function addone(num){
+    return num + 1
+}
 
 
-// //aise declare krne pr pehle decalre krna hota hai function ko 
+//aise declare krne pr , pehle declare then use krna hota hai
 // addTwo(5) 
-// const addTwo = function(num){
-//     return num + 2
-// }
+const addTwo = function(num){
+    return num + 2
+}
 
 // const hh = 90
 

@@ -4,9 +4,10 @@ const myNums = [1, 2, 3]
 //     console.log(`acc: ${acc} and currval: ${currval}`);
 //     return acc + currval
 // }, 0)
-
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
-
+const initialvalue = 0
+const myTotal = myNums.reduce( (acc, curr)  =>   
+                 acc+curr, initialvalue)
+//curr mai current value acc main initial value initialvalue se jayengi sirf ek baar initial value mangta hai thenreturn value goes in acc 
 console.log(myTotal);
 
 

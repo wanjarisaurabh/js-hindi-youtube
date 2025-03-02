@@ -4,7 +4,7 @@
 
 console.log(3 
     +
-     3) // code readability should be high
+     3) // code readability should be high , isiliye aise nai likhate 
 
 console.log("Hitesh")
 
@@ -18,9 +18,10 @@ let state;
 // bigint
 // string => ""
 // boolean => true/false
-// null => standalone value
+// null => standalone value  , representation of empty value
 // undefined => 
-// symbol => unique
+// symbol => unique , age do similar description pass kare do symbol ko tabbhi vo differecnt rehenge 
+
 
 
 // object

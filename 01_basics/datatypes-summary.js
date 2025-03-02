@@ -3,7 +3,8 @@
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100
-const scoreValue = 100.3
+const scoreValue = 1003n
+console.log(typeof scoreValue)
 
 const isLoggedIn = false
 const outsideTemp = null
@@ -11,6 +12,8 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
+
+//then after the two symbol will be differn
 
 console.log(id === anotherId);
 
@@ -32,6 +35,8 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+myFunction()
+
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
