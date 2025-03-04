@@ -26,22 +26,35 @@
      // attachEvent()
     // jQuery - on
 
-    // type, timestamp, defaultPrevented
+    // type, timestamp, preventDefault
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    //Event Bubbling
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
-    // }, false)
+    // }, false) 
+      // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }) //both are same
+    
+    
+
+    //Event capturing
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, true) 
+
+
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation() //propogating off
     // }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
+    //     e.preventDefault(); //the default activity stop
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
