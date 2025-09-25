@@ -1,30 +1,29 @@
-//function borrowing 
+// function borrowing 
+// When you want to borrow a method from one object and use it in another.
 // const ob1 ={
 //     first : "saurabh ",
 //     Last : "wanjari",
 //     herro: function(){
 //         console.log(this.first)
 //         console.log(this.Last)
-//     }
-// }
+// //     }
+// // }
 
-// ob1.herro()
+// // ob1.herro()
 
-// console.log("______------______")
-// const ob2 ={
-//     first : "prem ",
-//     Last : "wanjari"
-// }
+// // // console.log("______------______")
+// // const ob2 ={
+// //     first : "prem ",
+// //     Last : "wanjari"
+// // }
 
-// ob1.herro.call(ob2)
+// // ob1.herro.call(ob2) // prem wanjari
 
 
-//in real word 
-
+// //in real word 
 // const ob1 ={
 //     first : "saurabh ",
 //     Last : "wanjari",
-   
 // }
 
 
@@ -34,15 +33,18 @@
 //     console.log(work)
 // }
 
-// imf.call(ob1 , "sleeping ")
+// // const s = imf.bind(ob1);
+// // s("hello");//saurabh wanjari hello
 
-// console.log("______------______")
+// // imf.call(ob1 , "sleeping ") //saurabh wanjarii sleeping
+
+// // console.log("______------______")
 // const ob2 ={
 //     first : "prem ",
 //     Last : "wanjari"
 // }
 
-// imf.call(ob2)
+// imf.call(ob2) //prem wanjari
 
 
 
@@ -56,7 +58,12 @@
 //   greet.call(person, 'Hello', '!');  // Output: "Hello, Alice!"
   
 
-//Apply 
+//   const hell = greet.bind(person)
+//   hell("namaster", "lavde") //namaster Alicelavde
+
+// //Apply 
+
+// Useful when you have an array of arguments that you want to pass to a function.
 const ob1 ={
     first : "saurabh ",
     Last : "wanjari",
@@ -68,7 +75,7 @@ const ob1 ={
 //     console.log(name + " "+friedn)
 // }
 
-function imf(name  ){
+function imf(...name){
     console.log(this.first);
     console.log(this.Last);
     console.log(name + " ")

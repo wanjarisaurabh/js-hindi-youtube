@@ -21,6 +21,10 @@ const chai = new User("chai", "chai@gmail.com", "123")
 console.log(chai.encryptPassword());
 console.log(chai.changeUsername());
 
+
+
+
+
 // behind the scene
 
 function User(username, email, password){

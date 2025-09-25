@@ -8,12 +8,12 @@
 // for (const key in myObject) {
 //     console.log(`${key} shortcut is for ${myObject[key]}`);
 // }
-// // //not possible
-// // for (const [key , value] of myObject) {
+// //not possible
+// for (const [key , value] of myObject) {
 
-// //     console.log(key , value);
+//     console.log(key , value);
     
-// // }
+// }
 
 // const programming = ["js", "rb", "py", "java", "cpp"]
 

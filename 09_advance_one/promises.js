@@ -1,6 +1,8 @@
 //read from the mdn
 
 
+
+
 // const promiseOne = new Promise(function(resolve, reject){
 //     //Do an async task
 //     // DB calls, cryptography, network
@@ -25,6 +27,7 @@
 // }).then(function(){
 //     console.log("Async 2 resolved");
 // })
+
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -70,6 +73,9 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
+
+
+
 async function consumePromiseFive(){
     try {
         const response = await promiseFive
@@ -105,3 +111,49 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
+
+
+//promise mean - a object which represent a value which you will get now / later / never 
+
+
+
+
+// // Simulate fetching data from a server using Promise
+// function fetchUserData(userId) {
+//     return new Promise((resolve, reject) => {
+//         // Simulate a network delay
+//         setTimeout(() => {
+//             const users = {
+//                 1: { name: "Alice", age: 25 },
+//                 2: { name: "Bob", age: 30 }
+//             };
+
+//             if (users[userId]) {
+//                 resolve(users[userId]); // Data found, resolve the promise
+//             } else {
+//                 reject("User not found"); // Data not found, reject the promise
+//             }
+//         }, 1000); // 1-second delay to simulate API
+//     });
+// }
+
+// // Using .then() and .catch()   -1st way
+// fetchUserData(1)
+//     .then(user => {
+//         console.log("Using .then():", user);
+//     })
+//     .catch(error => {
+//         console.log("Error:", error);
+//     });
+
+// // Using async/await --- 2nd way 
+// async function showUser(userId) {
+//     try {
+//         const user = await fetchUserData(userId); // Wait for the promise to resolve
+//         console.log("Using async/await:", user);
+//     } catch (error) {
+//         console.log("Error:", error);
+//     }
+// }
+
+// showUser(3); // User 3 does not exist, will trigger error

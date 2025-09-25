@@ -27,4 +27,4 @@ accountCity = "Bengaluru"
 // console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
 
 console.table([accountCity, accountId, accountEmail, accountPassword])
-alert("hey this is sau")//this does not worked in node environment it requires the browser 
+// alert("hey this is sau")//this does not worked in node environment it requires the browser 

@@ -13,16 +13,17 @@ const myArr2 = new Array(1, 2, 4,2,2,3, 4)
 // myArr.pop()
 
 // myArr.unshift(9) // add 9 in front
-// myArr.shift()// remove from the front 
+// console.log(myArr)
+// // myArr.shift()// remove from the front 
 
 // console.log(myArr.includes(9));
-console.log(myArr.indexOf(3));
+// console.log(myArr.indexOf(3));
 
-const newArr = myArr.join() // change the array to string 
+// const newArr = myArr.join() // change the array to string 
 
-console.log(myArr);
-console.log( newArr);
-console.log(typeof newArr)
+// console.log(myArr);
+// console.log( newArr);
+// console.log(typeof newArr)
 
 
 // slice, splice
@@ -31,10 +32,10 @@ console.log("A ", myArr);
 
 const myn1 = myArr.slice(1, 3) //give u slice 
 
-console.log(myn1);
-console.log("B ", myArr);
+console.log(myn1);//[1,2]
+console.log("B ", myArr);//whole array as it is 
 
 
 const myn2 = myArr.splice(1, 3) //it also change the the orignal array , which is not hppend in slice , it include the 3 index
-console.log("C ", myArr);
-console.log(myn2);
+// console.log("C ", myArr);// [0, 4,5]
+console.log(myn2);//[1,2,3]

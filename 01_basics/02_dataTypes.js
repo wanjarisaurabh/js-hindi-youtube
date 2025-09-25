@@ -15,7 +15,7 @@ let isLoggedIn = false
 let state;
 
 // number => 2 to power 53
-// bigint
+// bigint 
 // string => ""
 // boolean => true/false
 // null => standalone value  , representation of empty value
@@ -26,5 +26,5 @@ let state;
 
 // object
 
-console.log(typeof undefined); // undefined
+console.log(typeof bigint); // undefined
 console.log(typeof null); // object

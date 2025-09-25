@@ -24,7 +24,11 @@ const chai = new Teacher("chai", "chai@teacher.com", "123")
 
 chai.logMe()
 const masalaChai = new User("masalaChai")
+const h = new Teacher("saurabh ", 'saurabh@gmail.com',"saurabh@");
+h.logMe();
+
 
 masalaChai.logMe()
 
-console.log(chai instanceof User);
+// console.log(chai instanceof User);
+masalaChai.logMe();

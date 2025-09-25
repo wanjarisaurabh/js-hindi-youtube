@@ -1,9 +1,9 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"];
 const dc_heros = ["superman", "flash", "batman"];
 
-// const arr = ["saurba " , "saurba " , 89 , true]  // is hetrogenouse
+const arr = ["saurba " , "saurba " , 89 , true]  // is hetrogenouse
 
-// console.log(arr)
+console.log(arr)
 
 // marvel_heros.push(dc_heros)
 // console.log(marvel_heros)

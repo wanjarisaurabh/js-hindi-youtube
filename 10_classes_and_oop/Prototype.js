@@ -1,67 +1,78 @@
 // let myName = "hitesh     "
 // let mychannel = "chai     "
-
 // console.log(myName.trueLength);
-
-
-let myHeros = ["thor", "spiderman"]
-
-
-let heroPower = {
-    thor: "hammer",
-    spiderman: "sling",
-
-    getSpiderPower: function(){
-        console.log(`Spidy power is ${this.spiderman}`);
-    }
-}
-
-Object.prototype.hitesh = function(){
-    console.log(`hitesh is present in all objects`);
-}
-
-Array.prototype.heyHitesh = function(){
-    console.log(`Hitesh says hello`);
-}
-
+// let myHeros = ["thor", "spiderman"]
+// let heroPower = {
+//     thor: "hammer",
+//     spiderman: "sling",
+//     getSpiderPower: function(){
+//     console.log(`Spidy power is ${this.spiderman}`);
+//  }
+// }
+// Object.prototype.hitesh = function(){
+//     console.log(`hitesh is present in all objects`);
+// }
+// Array.prototype.heyHitesh = function(){
+//     console.log(`Hitesh says hello`);
+// }
 // heroPower.hitesh()
-// myHeros.hitesh()
+// myHeros.heyHitesh()
 // myHeros.heyHitesh()
 // heroPower.heyHitesh()
-
 // inheritance
 
-const User = {
-    name: "chai",
-    email: "chai@google.com"
+// const User = {
+//     name: "chai",
+//     email: "chai@google.com"
+// }
+
+// const Teacher = {
+//     makeVideo: true
+// }
+
+// const TeachingSupport = {
+//     isAvailable: false
+// }
+
+// const TASupport = {
+//     makeAssignment: 'JS assignment',
+//     fullTime: true,
+//     __proto__: TeachingSupport
+// }
+
+// Teacher.__proto__ = User
+
+// // modern syntax
+// Object.setPrototypeOf(TeachingSupport, Teacher)
+
+// let anotherUsername = "ChaiAurCode     "
+
+// String.prototype.trueLength = function(){
+//     console.log(`${this}`);
+//     console.log(`True length is: ${this.trim().length}`);
+// }
+
+// anotherUsername.trueLength()
+// "hitesh".trueLength()
+// "iceTea".trueLength()
+
+
+function User(name) {
+    this.name = name;
 }
 
-const Teacher = {
-    makeVideo: true
-}
+User.prototype.greet = function() {
+    return `Hello, ${this.name}`;
+};
 
-const TeachingSupport = {
-    isAvailable: false
-}
+const u1 = new User("Alice");
 
-const TASupport = {
-    makeAssignment: 'JS assignment',
-    fullTime: true,
-    __proto__: TeachingSupport
-}
+console.log(u1.__proto__ === User.prototype); // true
+console.log(u1.greet()); // Hello, Alice
 
-Teacher.__proto__ = User
 
-// modern syntax
-Object.setPrototypeOf(TeachingSupport, Teacher)
+// __proto__ is a property on every JavaScript object that points to the object’s prototype.
 
-let anotherUsername = "ChaiAurCode     "
+// In other words, it shows where JavaScript should look next if a property or method is not found directly on the object.
 
-String.prototype.trueLength = function(){
-    console.log(`${this}`);
-    console.log(`True length is: ${this.trim().length}`);
-}
-
-anotherUsername.trueLength()
-"hitesh".trueLength()
-"iceTea".trueLength()
+// It’s part of the prototype chain mechanism.
